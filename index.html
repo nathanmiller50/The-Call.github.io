@@ -4,21 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to My Website</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px 0;
+    }
+
+    /* Navigation bar styling */
+    nav {
+      background-color: #005f99;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    a.button:hover {
+      background-color: #005f99;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-    <p>My name is Nathan Miller.</p>
+    <h1>Welcome to My Website!</h1>
   </header>
 
-  <main>
-    <p>To learn more about me and my call to ministry click below!</p>
-    <a href="about.html">Learn more about me</a>
-  </main>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <footer>
-    <p>© 2025 My Website</p>
-  </footer>
+  <main>
+    <p>Hey, I’m Nathan — thanks for visiting my site!</p>
+    <p>This is my home page, built using GitHub Pages.</p>
+
+    <a href="about.html" class="button">Learn more about me</a>
+  </main>
 </body>
 </html>
