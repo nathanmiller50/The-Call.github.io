@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Me</title>
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      text-align: center;
       margin: 0;
       padding: 0;
+      background-color: #f8f9fa;
+      text-align: center;
     }
 
     header {
@@ -37,50 +37,44 @@
     }
 
     main {
-      margin-top: 40px;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
-    form {
+    .contact-box {
       background: white;
       display: inline-block;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       max-width: 400px;
-      width: 90%;
-      text-align: left;
     }
 
-    label {
+    .contact-box a {
+      color: #007acc;
+      text-decoration: none;
       font-weight: bold;
-      display: block;
-      margin-top: 10px;
     }
 
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    .contact-box a:hover {
+      text-decoration: underline;
     }
 
-    button {
+    .socials {
       margin-top: 15px;
-      background-color: #007acc;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
     }
 
-    button:hover {
-      background-color: #005f99;
+    .socials a {
+      margin: 0 10px;
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Contact Me</h1>
@@ -93,21 +87,17 @@
   </nav>
 
   <main>
-    <p>Have a question, idea, or opportunity? Send me a message below!</p>
+    <div class="contact-box">
+      <p>You can reach me anytime by email or through social media:</p>
+      <p><strong>Email:</strong> <a href="mailto:yourname@email.com">yourname@email.com</a></p>
 
-    <!-- Contact Form -->
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="_replyto" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+      <div class="socials">
+        <p><strong>Socials:</strong></p>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a> |
+        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a> |
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+      </div>
+    </div>
   </main>
 </body>
 </html>
