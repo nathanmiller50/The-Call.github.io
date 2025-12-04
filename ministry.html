@@ -28,4 +28,291 @@
             border-radius: 16px;
             padding: 40px;
             margin-bottom: 30px;
-            box-shadow:
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 20px;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .back-home:hover {
+            color: #764ba2;
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .opportunity-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .opportunity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .opportunity-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .opportunity-icon svg {
+            width: 30px;
+            height: 30px;
+            stroke: white;
+        }
+
+        .opportunity-card h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .opportunity-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .detail-item svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            stroke: #667eea;
+            flex-shrink: 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .opportunities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <h1>Ministry Opportunities</h1>
+            <p class="subtitle">Join us in serving and making a difference in our community. Whether you have a few hours a week or want to dive deeper, there's a place for you to use your gifts and talents.</p>
+        </div>
+
+        <div class="opportunities-grid">
+            <div class="opportunity-card">
+                <div class="opportunity-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"/>
+                        <circle cx="6" cy="18" r="3"/>
+                        <circle cx="18" cy="16" r="3"/>
+                    </svg>
+                </div>
+                <h2>Worship Team</h2>
+                <p>Use your musical talents to lead our youth in praise and worship. We're looking for vocalists, instrumentalists, and passionate worshippers.</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>6:30 PM - 8:00 PM</span>
+                    </div>
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Youth Room</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn">Get Involved</a>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="opportunity-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                </div>
+                <h2>Youth Leader</h2>
+                <p>Make an impact in young lives by mentoring, teaching, and creating a safe space for students to grow in their faith and community.</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>6:30 PM - 8:00 PM</span>
+                    </div>
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Youth Room</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn">Get Involved</a>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="opportunity-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h2>Small Group Leader</h2>
+                <p>Lead or host a small group for Bible study, prayer, and fellowship. Help create meaningful connections and spiritual growth.</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>Weekends</span>
+                    </div>
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Homes & Church</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn">Get Involved</a>
+            </div>
+
+            <div class="opportunity-card">
+                <div class="opportunity-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <polygon points="23 7 16 12 23 17 23 7"/>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                    </svg>
+                </div>
+                <h2>Media & Tech</h2>
+                <p>Help with sound, lights, video production, and live streaming to enhance our worship experience and create an engaging environment.</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>6:30 PM - 8:00 PM</span>
+                    </div>
+                    <div class="detail-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Youth Room</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn">Get Involved</a>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Serve?</h2>
+            <p>We believe everyone has unique gifts to share. Contact us to learn more about these opportunities or to discuss how you can get involved in ministry.</p>
+            <a href="contact.html" class="btn">Contact Us Today</a>
+        </div>
+    </div>
+</body>
+</html>
