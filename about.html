@@ -1,74 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
 
-    header {
-      background-color: #007acc;
-      color: white;
-      padding: 20px 0;
-    }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-    main {
-      max-width: 700px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+        .content-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
 
-    h1 {
-      margin-bottom: 10px;
-    }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 25px;
+            transition: transform 0.2s, color 0.2s;
+        }
 
-    p {
-      line-height: 1.6;
-      color: #333;
-    }
+        .back-home:hover {
+            color: #764ba2;
+            transform: translateX(-5px);
+        }
 
-    a {
-      color: #007acc;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-  </header>
+    <div class="container">
+        <div class="content-card">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            
+            <h1>About Me</h1>
 
-  <main>
-    <img src="https://via.placeholder.com/150" alt="Profile picture" style="border-radius: 50%; margin-bottom: 20px;">
-    
-    <h2>My Testimony</h2>
-    <p>I grew up attending church regularly with my family, but my faith didn’t truly become personal until the Lord placed a calling on my life to become a youth pastor when I was about fourteen years old. From that moment on, I was passionate about pursuing God and excited for the plans He had for me.
-      As I got older, however, life became more challenging. I struggled to find the motivation to do simple everyday tasks like getting out of bed, spending time with friends, or completing homework. Seeking clarity, I reached out for help, and around the age of seventeen, I was diagnosed with severe depression. I remember feeling confused and angry at God for allowing me to face something so difficult. Instead of turning to Him, I tried handling everything on my own. I looked to the things of the world to fill the emptiness I felt, even though I knew they would never satisfy.
-      But the Lord had other plans for my life. One night, after driving home from a friend’s house, I parked my car and sat there, overwhelmed by where my choices had taken me. I said out loud, “How did I get here?” In that moment, the Lord met me. I heard an audible voice say, “What are you doing? This is not what I have called you to. I have called you to so much more.” Immediately, the emptiness in my heart lifted, and I was filled with the overwhelming love of Jesus Christ.
-      From that point on, I began to change. I stopped relying on shame and guilt and started relying on the love, grace, and strength of Christ. His presence transformed my life, and I am committed to walking in the calling He placed on my heart.
-    <h2>My Vision</h2>
-    <p>I feel a strong calling to share the Gospel with the next generation, believing wholeheartedly that they are the beginning of a new revival. My mission is to provide a safe and supportive environment where students can grow physically, mentally, and spiritually. I am committed to teaching them that their identity is found not in the world, but in Jesus Christ alone.
-       I want them to know that, no matter what they face, Jesus Christ loves them deeply and they can confidently live their lives for Him. It is both my calling and the passion of my life to see the next generation rise up, fully devoted and on fire for the Lord
-      
-    </p>
+            <div class="section">
+                <h2>My Testimony</h2>
+                <p>I grew up attending church regularly with my family, but my faith didn't truly become personal until the Lord placed a calling on my life to become a youth pastor when I was about fourteen years old. From that moment on, I was passionate about pursuing God and excited for the plans He had for me.</p>
+                
+                <p>As I got older, however, life became more challenging. I struggled to find the motivation to do simple everyday tasks like getting out of bed, spending time with friends, or completing homework. Seeking clarity, I reached out for help, and around the age of seventeen, I was diagnosed with severe depression. I remember feeling confused and angry at God for allowing me to face something so difficult. Instead of turning to Him, I tried handling everything on my own. I looked to the things of the world to fill the emptiness I felt, even though I knew they would never satisfy.</p>
+                
+                <p>But the Lord had other plans for my life. One night, after driving home from a friend's house, I parked my car and sat there, overwhelmed by where my choices had taken me. I said out loud, "How did I get here?" In that moment, the Lord met me. I heard an audible voice say, "What are you doing? This is not what I have called you to. I have called you to so much more."</p>
+                
+                <p>Immediately, the emptiness in my heart lifted, and I was filled with the overwhelming love of Jesus Christ.</p>
+                
+                <p>From that point on, I began to change. I stopped relying on shame and guilt and started relying on the love, grace, and strength of Christ. His presence transformed my life, and I am committed to walking in the calling He placed on my heart.</p>
+            </div>
 
-    <a href="index.html">← Back to Home</a>
-  </main>
+            <div class="section">
+                <h2>My Vision</h2>
+                <p>I feel a strong calling to share the Gospel with the next generation, believing wholeheartedly that they are the beginning of a new revival. My mission is to provide a safe and supportive environment where students can grow physically, mentally, and spiritually.</p>
+                
+                <p>I am committed to teaching them that their identity is found not in the world, but in Jesus Christ alone. I want them to know that, no matter what they face, Jesus Christ loves them deeply and they can confidently live their lives for Him.</p>
+                
+                <p>It is both my calling and the passion of my life to see the next generation rise up, fully devoted and on fire for the Lord.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
